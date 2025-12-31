@@ -69,3 +69,7 @@ function processData93(data) {
     }
     return null;
 }
+
+# Add input sanitization
+def sanitize_input(text):
+    return text.strip().replace('<', '&lt;').replace('>', '&gt;')
