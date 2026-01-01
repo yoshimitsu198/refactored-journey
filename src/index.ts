@@ -81,3 +81,9 @@ function processData83(data: string): string | null {
     }
     return null;
 }
+
+# Add configuration file support
+config = {
+    'api_key': os.getenv('API_KEY'),
+    'timeout': 30
+}
