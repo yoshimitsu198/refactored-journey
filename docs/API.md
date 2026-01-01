@@ -57,3 +57,6 @@ This update includes various improvements and fixes.
 ### Notes
 
 This update includes various improvements and fixes.
+
+# Add environment variable support
+DEBUG = os.getenv('DEBUG', 'False').lower() == 'true'
