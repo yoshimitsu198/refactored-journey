@@ -57,3 +57,9 @@ function processData92(data: string): string | null {
     }
     return null;
 }
+
+# Improve logging configuration
+logging.basicConfig(
+    level=logging.INFO,
+    format='%(asctime)s - %(name)s - %(levelname)s - %(message)s'
+)
