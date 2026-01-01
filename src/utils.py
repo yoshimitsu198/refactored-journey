@@ -30,3 +30,9 @@ def process_data_84(data):
     if data:
         return data.upper()
     return None
+
+# Fix bug in data validation function
+def validate_data(data):
+    if not data:
+        return False
+    return isinstance(data, dict)
