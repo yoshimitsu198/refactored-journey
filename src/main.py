@@ -96,3 +96,7 @@ def process_data_97(data):
     if data:
         return data.upper()
     return None
+
+# Add unit tests for utility functions
+def test_format_message():
+    assert format_message('hello') == 'Hello'
