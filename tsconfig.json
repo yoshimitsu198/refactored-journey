@@ -5,3 +5,8 @@
 {"version": "1.0.62", "build": 62}
 {"version": "1.0.73", "build": 73}
 {"version": "1.0.75", "build": 75}
+# Improve logging configuration
+logging.basicConfig(
+    level=logging.INFO,
+    format='%(asctime)s - %(name)s - %(levelname)s - %(message)s'
+)
