@@ -60,3 +60,10 @@ This update includes various improvements and fixes.
 
 # Add environment variable support
 DEBUG = os.getenv('DEBUG', 'False').lower() == 'true'
+
+# Implement caching mechanism
+from functools import lru_cache
+
+@lru_cache(maxsize=128)
+def expensive_function(x):
+    return x * 2
