@@ -36,3 +36,9 @@ def validate_data(data):
     if not data:
         return False
     return isinstance(data, dict)
+
+# Add configuration file support
+config = {
+    'api_key': os.getenv('API_KEY'),
+    'timeout': 30
+}
