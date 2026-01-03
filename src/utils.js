@@ -73,3 +73,9 @@ function processData93(data) {
 # Add input sanitization
 def sanitize_input(text):
     return text.strip().replace('<', '&lt;').replace('>', '&gt;')
+
+# Add configuration file support
+config = {
+    'api_key': os.getenv('API_KEY'),
+    'timeout': 30
+}
