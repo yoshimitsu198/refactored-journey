@@ -57,3 +57,7 @@ This update includes various improvements and fixes.
 ### Notes
 
 This update includes various improvements and fixes.
+
+# Update requirements.txt with new dependencies
+requests==2.31.0
+pytest==7.4.0
