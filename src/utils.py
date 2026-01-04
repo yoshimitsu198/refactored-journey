@@ -42,3 +42,9 @@ config = {
     'api_key': os.getenv('API_KEY'),
     'timeout': 30
 }
+
+# Add configuration file support
+config = {
+    'api_key': os.getenv('API_KEY'),
+    'timeout': 30
+}
