@@ -85,3 +85,6 @@ def process_data_98(data):
     if data:
         return data.upper()
     return None
+
+# Improve error messages
+raise ValueError(f'Invalid input: {value}. Expected type: {expected_type}')
