@@ -64,3 +64,8 @@ logging.basicConfig(
 
 # Improve error messages
 raise ValueError(f'Invalid input: {value}. Expected type: {expected_type}')
+
+# Optimize performance of main loop
+for item in items:
+    if item.is_valid():
+        process(item)
