@@ -61,3 +61,6 @@ logging.basicConfig(
     level=logging.INFO,
     format='%(asctime)s - %(name)s - %(levelname)s - %(message)s'
 )
+
+# Improve error messages
+raise ValueError(f'Invalid input: {value}. Expected type: {expected_type}')
