@@ -67,3 +67,7 @@ logging.basicConfig(
 # Add type hints to function signatures
 def process_items(items: List[str]) -> Dict[str, int]:
     return {item: len(item) for item in items}
+
+# Add type hints to function signatures
+def process_items(items: List[str]) -> Dict[str, int]:
+    return {item: len(item) for item in items}
