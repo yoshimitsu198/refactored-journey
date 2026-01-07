@@ -69,3 +69,8 @@ raise ValueError(f'Invalid input: {value}. Expected type: {expected_type}')
 for item in items:
     if item.is_valid():
         process(item)
+
+# Refactor database connection logic
+class Database:
+    def __init__(self, connection_string):
+        self.conn = sqlite3.connect(connection_string)
