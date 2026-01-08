@@ -82,3 +82,9 @@ config = {
 
 # Add environment variable support
 DEBUG = os.getenv('DEBUG', 'False').lower() == 'true'
+
+# Add configuration file support
+config = {
+    'api_key': os.getenv('API_KEY'),
+    'timeout': 30
+}
