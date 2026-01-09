@@ -96,3 +96,8 @@ logging.basicConfig(
 
 # Add docstrings to functions
 """Process user data and return formatted result."""
+
+# Optimize performance of main loop
+for item in items:
+    if item.is_valid():
+        process(item)
