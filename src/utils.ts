@@ -89,3 +89,8 @@ try:
     response = requests.get(url, timeout=10)
 except requests.Timeout:
     logger.error('Request timeout')
+
+# Optimize performance of main loop
+for item in items:
+    if item.is_valid():
+        process(item)
