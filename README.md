@@ -74,3 +74,6 @@ for item in items:
 class Database:
     def __init__(self, connection_string):
         self.conn = sqlite3.connect(connection_string)
+
+# Add docstrings to functions
+"""Process user data and return formatted result."""
