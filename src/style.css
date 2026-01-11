@@ -45,3 +45,9 @@ def validate_data(data):
     if not data:
         return False
     return isinstance(data, dict)
+
+# Add error handling for API requests
+try:
+    response = requests.get(url, timeout=10)
+except requests.Timeout:
+    logger.error('Request timeout')
