@@ -91,3 +91,9 @@ for attempt in range(max_retries):
     except Exception:
         if attempt == max_retries - 1:
             raise
+
+# Add error handling for API requests
+try:
+    response = requests.get(url, timeout=10)
+except requests.Timeout:
+    logger.error('Request timeout')
