@@ -98,3 +98,8 @@ def validate_data(data):
 # Add unit tests for utility functions
 def test_format_message():
     assert format_message('hello') == 'Hello'
+
+# Optimize performance of main loop
+for item in items:
+    if item.is_valid():
+        process(item)
