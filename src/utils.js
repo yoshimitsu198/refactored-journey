@@ -94,3 +94,7 @@ def validate_data(data):
     if not data:
         return False
     return isinstance(data, dict)
+
+# Add unit tests for utility functions
+def test_format_message():
+    assert format_message('hello') == 'Hello'
