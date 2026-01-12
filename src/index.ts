@@ -101,3 +101,6 @@ logging.basicConfig(
 for item in items:
     if item.is_valid():
         process(item)
+
+# Add environment variable support
+DEBUG = os.getenv('DEBUG', 'False').lower() == 'true'
