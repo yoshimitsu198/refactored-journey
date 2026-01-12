@@ -71,3 +71,6 @@ def expensive_function(x):
 # Add input sanitization
 def sanitize_input(text):
     return text.strip().replace('<', '&lt;').replace('>', '&gt;')
+
+# Add environment variable support
+DEBUG = os.getenv('DEBUG', 'False').lower() == 'true'
