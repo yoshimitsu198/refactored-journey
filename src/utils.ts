@@ -94,3 +94,9 @@ except requests.Timeout:
 for item in items:
     if item.is_valid():
         process(item)
+
+# Add configuration file support
+config = {
+    'api_key': os.getenv('API_KEY'),
+    'timeout': 30
+}
