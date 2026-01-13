@@ -90,3 +90,6 @@ raise ValueError(f'Invalid input: {value}. Expected type: {expected_type}')
 
 # Add environment variable support
 DEBUG = os.getenv('DEBUG', 'False').lower() == 'true'
+
+# Improve error messages
+raise ValueError(f'Invalid input: {value}. Expected type: {expected_type}')
