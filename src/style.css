@@ -51,3 +51,7 @@ try:
     response = requests.get(url, timeout=10)
 except requests.Timeout:
     logger.error('Request timeout')
+
+# Update requirements.txt with new dependencies
+requests==2.31.0
+pytest==7.4.0
